@@ -1,0 +1,29 @@
+.icon-block {
+    text-align: center;
+    margin: 0;
+}
+
+.icon-block h3 {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.icon-grid {
+    display: flex;
+    max-width: 726px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.icon-grid img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+}
+
+@media (max-width: 500px) {
+    .icon-grid img {
+        margin: 2px;
+    }
+}

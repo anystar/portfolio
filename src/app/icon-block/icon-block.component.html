@@ -1,0 +1,8 @@
+<div class="icon-block">
+  <h3>{{header}}</h3>
+  
+  <div class="icon-grid" [ngStyle]="{ 'grid-template-columns': columnCount }">
+    <img *ngFor="let icon of icons" src="assets/100x100.png">
+    <!-- <div *ngFor="let icon of icons" title="{{icon}}" class="icon {{icon}}"></div> -->
+  </div>
+</div>
