@@ -3,7 +3,7 @@ import { Component, OnInit, Input } from '@angular/core';
 @Component({
   selector: 'icon-block',
   templateUrl: './icon-block.component.html',
-  styleUrls: ['./icon-block.component.css', './icon-tilemap.css']
+  styleUrls: ['./icon-block.component.css']
 })
 export class IconBlockComponent implements OnInit {
 
