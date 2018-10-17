@@ -2,18 +2,32 @@
 
 <div id="main-content">
 
-  <div data-jarallax data-type="opacity" data-speed="0.5" class="jarallax" id="banner-image"></div>
+  <!-- <div data-jarallax data-type="opacity" data-speed="0.5" class="jarallax" id="banner-image"></div> -->
 
-  <section>
+  <section id="intro">
     <h1>Summer White</h1>
     <a class="mailer" href="mail:summerwhite@mail.com">summerwhite@mail.com</a><br>
-    <a target="_blank" href="https://facebook.com/selfdirected">Facebook</a> - <a target="_blank" href="https://www.flickr.com/people/summerwhite/">Flickr</a> - <a href="#0">Resume</a>
-    <p>Digital creative and programmer currently working as Lead Web Developer at Web Works Bendigo.</p>
+    <a target="_blank" href="https://facebook.com/selfdirected">Facebook</a> - <a target="_blank" href="https://www.flickr.com/people/summerwhite/">Flickr</a>
+
+    <div class="grid summer-white">
+      <div class="photo"><img src="assets/summer-01.jpg"></div>
+      <div class="photo" style="background-image: url('assets/summer-03.jpg');"></div>
+      <div class="photo" style="background-image: url('assets/summer-02.jpg');"></div>
+      <div class="photo cover-photo" style="background-image: url('assets/cover-photo.png');"></div>
+    </div>
+
+    <p>
+      Currently working at <a href="http://webworksau.com.au/">Web Works</a> in Bendigo Australia as a Lead Web Designer. Building small to medium sized business websites
+      from design to completion and providing on going technical support.
+    </p>
+    <p>
+      I am seeking oppunities to work on projects involving Angular or RESTful/SPA like applications.
+    </p>
   </section>
 
   <section>
     <header>
-      <h2>Web Design &amp; Developement</h2>
+      <h2>Web Design &amp; Development</h2>
       <span>Extensive experience with small business websites</span>
     </header>
 
@@ -26,10 +40,9 @@
     <div class="grid lightgallery hotel-shamrock">
 
       <div class="primary">
-        <video controls loop muted autoplay>
-          <source src="assets/hotel-shamrock.mp4" type="video/mp4">
-          <source src="assets/hotel-shamrock.webm" type="video/webm">
-        </video>
+
+        <video-player name="hotel-shamrock"></video-player>
+
         <div class="caption">
           <p>
             Hotel Shamrock
@@ -80,13 +93,13 @@
       <div data-src="assets/taylors-paint-and-customs-additional-03-full.jpg" class="photo" style="background-image: url('assets/taylors-paint-and-customs-additional-03.jpg');"></div>
 
       <div class="primary">
-        <img src="assets/taylors-paint-and-customs-primary.jpg">
+        <video-player name="taylors-custom-paints"></video-player>
 
         <div class="caption">
           <p>
             Taylors Paint &amp; Customs
             <br>
-            <sub>Web Design / Photography</sub>
+            <sub>Stylised inspired workshop website</sub>
           </p>
         </div>
       </div>
@@ -96,49 +109,57 @@
     <div class="grid more-webdesign">
 
       <div>
-        <img src="assets/adrian-bassett-homes-primary.jpg">
+        <img src="assets/classique-ski-boats.jpg">
 
         <div class="caption">
-          <p>Adrian Bassett Homes</p>
+          <p>Classique Ski Boats</p>
         </div>
       </div>
 
       <div>
-        <img src="assets/seal-a-fridge-nv-primary.jpg">
+        <img src="assets/fabline.jpg">
         <div class="caption">
-          <p>Seal-A-Fridge Northern Victoria</p>
+          <p>FAB Line</p>
         </div>
       </div>
 
       <div>
-        <img src="assets/braidies-tavern-primary.jpg">
+        <img src="assets/bendigo-window-furnishings.jpg">
         <div class="caption">
-          <p>Braidies Tavern</p>
-        </div>
-      </div>
-
-      <div>
-        <img src="assets/john-whitford-primary.jpg">
-        <div class="caption">
-          <p>John Whitford</p>
-        </div>
-      </div>
-
-      <div>
-        <img src="assets/bendigo-precast-concrete-primary.jpg">
-        <div class="caption">
-          <p>Bendigo Precast Concrete</p>
-        </div>
-      </div>
-
-      <div>
-        <img src="assets/braidies-tavern-primary.jpg">
-        <div class="caption">
-          <p>Braidies Tavern</p>
+          <p>Bendigo Window Furnishings</p>
         </div>
       </div>
 
     </div>
+
+    <div class="grid lightgallery two-blocks-webdesign">
+
+      <div>
+        <video-player name="bendigo-repair-cafe"></video-player>
+
+        <div class="caption">
+          <p>
+            Bendigo Repair Cafe
+            <br>
+            <sub>Free community website</sub>
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <video-player name="eaglehawk-football-netball-club"></video-player>
+
+        <div class="caption">
+          <p>
+            Eaglehawk Football Netball Club
+            <br>
+            <sub>Club Website</sub>
+          </p>
+        </div>
+      </div>
+
+    </div>
+    
 
     <icon-block 
       header = "Full stack / Front End / Server Side Tools"
@@ -186,8 +207,17 @@
     <section-header title="Justins &amp; Joy Hogan's Wedding 2018" subTitle="Friends wedding photography"></section-header>
 
     <div class="grid lightgallery justins-wedding">
-      <div data-src="assets/photography-01-full.jpg" class="photo"><img src="assets/photography-01.jpg"></div>
-      <div data-src="assets/photography-02-full.jpg" class="photo" style="background-image: url('assets/photography-02.jpg');"></div>
+      <div data-src="assets/photography-01-full.jpg" class="photo">
+        <img src="assets/photography-01.jpg">
+        <div class="caption">
+          <p>Justin &amp; Joy Aussie Wedding 2018</p>
+        </div>
+      </div>
+      <div data-src="assets/photography-02-full.jpg" class="photo" style="background-image: url('assets/photography-02.jpg');">
+        <div class="caption">
+          <p>Toyota '86 Photoshoot</p>
+        </div>
+      </div>
 
       <div data-src="assets/photography-03-full.jpg" class="photo" style="background-image: url('assets/photography-03.jpg');"></div>
       <div data-src="assets/photography-04-full.jpg" class="photo" style="background-image: url('assets/photography-04.jpg');"></div>
@@ -202,12 +232,105 @@
 
   </section>
 
+  <section>
+    <header>
+      <h2>Game Design and Development</h2>
+      <span>Huge passion for game design and developement</span>
+    </header>
+
+    <div class="grid gamedesign-show-reel">
+
+      <div class="primary">
+        <div class="youtube"><iframe src="https://www.youtube.com/embed/ggGJmzer0yE?allowfullscreen=true&wmode=transparent&iv_load_policy=3&html5=1&widgetid=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+        
+        <div class="video-caption">
+          <p>
+            2015 Game Design Show Reel
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid the-abduction">
+
+      <div class="primary">
+        <div class="youtube"><iframe src="https://www.youtube.com/embed/qXf2bLc1aa4?allowfullscreen=true&wmode=transparent&iv_load_policy=3&html5=1&widgetid=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+        
+        <div class="video-caption">
+          <p>
+            The Abduction
+          </p>
+        </div>
+      </div>
+
+      <div class="photo wide" style="background-image: url('assets/the-abduction-01.jpg');"></div>
+      <div class="photo" style="background-image: url('assets/the-abduction-02.jpg');"></div>
+      <div class="photo" style="background-image: url('assets/the-abduction-03.jpg');"></div>
+
+    </div>
+
+    <div class="grid gamedesign-more-videos">
+
+      <div class="primary">
+        <div class="youtube"><iframe src="https://www.youtube.com/embed/mQ9TMUXSNGU?allowfullscreen=true&wmode=transparent&iv_load_policy=3&html5=1&widgetid=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+        
+        <div class="video-caption">
+          <p>
+            Game Design Prototype
+          </p>
+        </div>
+      </div>
+
+      <div class="primary">
+        <div class="youtube"><iframe src="https://www.youtube.com/embed/4LreNug4yX0?allowfullscreen=true&wmode=transparent&iv_load_policy=3&html5=1&widgetid=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+        
+        <div class="video-caption">
+          <p>
+            When Mechs Attack
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid gamedesign-more-images">
+      <div data-src="https://via.placeholder.com/500x500" class="wide photo"><img src="assets/game-design-more-images-01.jpg"></div>
+      <div data-src="https://via.placeholder.com/500x500" class="photo" style="background-image: url('assets/game-design-more-images-02.jpg');"></div>
+      <div data-src="https://via.placeholder.com/500x500" class="photo" style="background-image: url('assets/game-design-more-images-03.jpg');"></div>
+      <div data-src="https://via.placeholder.com/500x500" class="photo" style="background-image: url('assets/game-design-more-images-04.jpg');"></div>
+
+      <div data-src="https://via.placeholder.com/500x500" class="photo" style="background-image: url('assets/game-design-more-images-05.jpg');"></div>
+      <div data-src="https://via.placeholder.com/500x500" class="photo" style="background-image: url('assets/game-design-more-images-06.jpg');"></div>
+      <div data-src="https://via.placeholder.com/500x500" class="photo" style="background-image: url('assets/game-design-more-images-07.jpg');"></div>
+    </div>
+
+    <icon-block 
+      header = "Tools I use to build games"
+      [icons] = "['Unity-Cross-Platform-Game-Engine', 'Autodesk-Maya','C-Sharp']">
+    </icon-block>
+
+  </section>  
+
+
+
+  <section *ngIf="false">
+
+    <header>
+      <h2>Fabrication and Engineering</h2>
+      <span>Trade Qualified Sheet Metal Fabricator</span>
+    </header>
+
+
+    <icon-block 
+      header = "Tools I use to build games"
+      [icons] = "['Unity-Cross-Platform-Game-Engine', 'Autodesk-Maya','C-Sharp']">
+    </icon-block>
+    
+  </section>
+
 
 
 </div>
 
 <footer id="footer">
-  <contact-section></contact-section>
-
-  <div></div>
+  <p>Summer White <span title="Copyleft, no copyright" class="copyleft">&copy;</span> {{year}}
 </footer>

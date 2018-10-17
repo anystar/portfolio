@@ -10,12 +10,13 @@ declare var lightGallery: any;
 
 export class AppComponent {
   title = 'app';
+  year: string;
 
   ngOnInit() {
 
-    var galleries = document.getElementsByClassName('lightgallery');
+    this.year = (new Date()).getFullYear().toString();
 
-    console.log(galleries);
+    var galleries = document.getElementsByClassName('lightgallery');
 
     for (var i = 0; i < galleries.length; i++) {
       lightGallery(galleries[i], {

@@ -26,6 +26,7 @@ h1, h2, h3, h4 {
 
 h1 {
     font-size: 3rem;
+    text-align: center;
 }
 
 a {
@@ -52,8 +53,30 @@ a:hover {
     background-color: #2D393F;
 }
 
+@media (max-width: 700px) {
+    #footer {
+        padding-left: 0;
+        padding-right: 0;
+        background-color: #2D393F;
+    }
+}
+
+#footer > p {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    padding: 2rem;
+    text-align: center;
+    margin: 0;
+}
+
+.copyleft {
+  display:inline-block;
+  transform: rotate(180deg);
+}
+
 #side-bar {
     position: fixed;
+    top: 0;
     width: var(--sidebar-width);
     height: 100%;
     background-color: #263238;

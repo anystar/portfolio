@@ -7,6 +7,7 @@ import { IconBlockComponent } from './icon-block/icon-block.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { SectionHeaderComponent } from './section-header/section-header.component';
 import { ContactSectionComponent } from './contact-section/contact-section.component';
+import { VideoComponent } from './video/video.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ContactSectionComponent } from './contact-section/contact-section.compo
     IconBlockComponent,
     GalleryComponent,
     SectionHeaderComponent,
-    ContactSectionComponent
+    ContactSectionComponent,
+    VideoComponent
   ],
   imports: [
     BrowserModule

@@ -1,0 +1,6 @@
+<video preload="auto" #myVideo (durationchange)="updateProgress()" (mouseover)="play()" (mouseout)="stop()" muted>
+  <source src="assets/{{name}}.webm" type="video/webm">
+</video>
+
+<div class="playButton"></div>
+<div class="progress" [ngStyle]="{'width': progress}"></div>
