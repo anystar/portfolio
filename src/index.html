@@ -7,6 +7,92 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="#">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto');
+    @import url('https://fonts.googleapis.com/css?family=Lato');
+
+    :root {
+        --content-background: #1B2125;
+        --sidebar-background: #263238;
+        --sidebar-width: 400px;
+        --section-header-size: 2rem;
+        --section-header-background: #2D393F;
+    }
+
+    body {
+        background-color: var(--content-background);
+        color: #fff;
+        font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+        max-width: 1920px;
+        overflow: auto;
+    }
+
+    h1, h2, h3, h4 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    #main-content {
+        margin-left: calc(var(--sidebar-width) + 50px);
+        margin-right: 50px;
+        width: auto;
+        position: relative;
+        padding-top: 2rem;
+        transition: margin 800ms;
+    }
+
+    #footer {
+        padding-left: calc(var(--sidebar-width) + 50px);
+        padding-right: 50px;
+        background-color: #2D393F;
+    }
+
+    @media (max-width: 700px) {
+        #footer {
+            padding-left: 0;
+            padding-right: 0;
+            background-color: #2D393F;
+        }
+    }
+
+    #footer > p {
+        font-size: 2rem;
+        line-height: 2.2rem;
+        padding: 2rem;
+        text-align: center;
+        margin: 0;
+    }
+
+    .copyleft {
+      display:inline-block;
+      transform: rotate(180deg);
+    }
+
+
+    @media(max-width: 800px) {
+        #main-content {
+            margin: 0 1rem !important;
+        }
+    }
+  </style>
 </head>
 <body>
   <app-root></app-root>

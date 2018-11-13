@@ -1,4 +1,14 @@
-<div id="side-bar">
+<div id="burger-button" (click)="toggle()">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<div id="side-bar" [ngClass]="!open ? 'sidebar-opened' : ''">
+  <div id="close" (click)="toggle()">
+    Hide
+  </div>
 
   <header>
     <h2>Summer White</h2>
@@ -39,7 +49,7 @@
 
   <h3>About me</h3>
 
-  <p>
+  <p class="about">
     Self taught, independent thinker and hard worker with years of practical on the job experience. Programming since the age
     of 14 years old with experience ranging from engineering, fabrication, design and web technologies to name a few. Blue collar 
     attitude who enjoys being on the tools solving problems.

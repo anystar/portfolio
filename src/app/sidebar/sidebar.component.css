@@ -1,4 +1,96 @@
 
+#burger-button {
+    top: 0;
+    left: 0;
+    margin: 1rem;
+    width: 40px;
+    cursor: pointer;
+    position: fixed;
+    z-index: 100;
+}
+
+@media (max-width: 700px) {
+    #burger-button {
+        position: absolute;
+    }
+}
+
+
+#burger-button > span {
+    display: block;
+    border: 2px solid #fff;
+    width: 100%;
+    margin-top: 4px;
+    border-radius: 4px;
+}
+
+
+
+#close {
+    top: 0;
+    left: 0;
+    box-sizing: content-box;
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 1rem;
+    text-transform: uppercase;  
+    transition: opacity 0.2s;
+    opacity: 0;
+}
+
+.sidebar-opened > #close {
+    cursor: pointer;
+    opacity: 1;
+}
+
+#side-bar {
+    position: fixed;
+    top: 0;
+    width: var(--sidebar-width);
+    height: 100%;
+    background-color: #263238;
+    padding: 2.5rem 1rem;
+    padding-bottom: 5rem;
+    box-sizing: border-box;
+    box-shadow: 2px 0px 2px 0px rgba(0,0,0,0.3);
+    border-right: 1px solid #15191B;
+    transition: margin 800ms;
+    z-index: 101;
+    overflow-y: auto;
+}
+
+
+@media (max-width: 500px) {
+    .sidebar-opened {
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 1450px) {
+    #close {
+        opacity: 0 !important;
+    }
+}
+
+@media (max-width: 1450px) {
+
+    .sidebar-opened {
+        margin: 0 !important;
+    }
+    
+    #side-bar {
+        margin-left: -400px;
+    }
+
+    #main-content {
+        margin: 1rem;
+        padding-top: 0;
+    }
+}
+
 header {
     margin-bottom: 3rem;
 }
@@ -14,7 +106,7 @@ header .mail {
 }
 
 h3 {
-    border-bottom: 1px solid #212d33;
+    /* border-bottom: 1px solid #212d33; */
     padding-bottom: 0.5rem;
     margin: 3rem 0 1rem 0;
     font-weight: normal;
@@ -48,3 +140,21 @@ h3 {
     margin-top: 3rem;
 }
 
+#side-bar::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+#side-bar::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+/* Handle */
+#side-bar::-webkit-scrollbar-thumb {
+    background: #374952; 
+}
+
+/* Handle on hover */
+#side-bar::-webkit-scrollbar-thumb:hover {
+    background: #374952; 
+}

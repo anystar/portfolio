@@ -1,6 +1,18 @@
-<video preload="auto" #myVideo (durationchange)="updateProgress()" (mouseover)="play()" (mouseout)="stop()" muted>
+<video preload="auto" #myVideo (timeupdate)="updateProgress()" (click)="playpause()" (mousemove)="mouseFollow($event)" (mouseout)="mouseOut()" muted>
   <source src="assets/{{name}}.webm" type="video/webm">
+  <source src="assets/{{name}}.mp4" type="video/mp4">
 </video>
 
-<div class="playButton"></div>
-<div class="progress" [ngStyle]="{'width': progress}"></div>
+<div class="playButton" [ngClass]="isPaused ? 'play' : 'pause'" [ngStyle]="{ 'left.px': playLeft, 'top.px': playTop, 'display': playCursorVisible ? 'block' : 'none' }">
+
+</div>
+
+<div class="caption video-controls">
+  <p 
+    (click)="progressMouseOver($event);"
+    [ngStyle]="{ 'background': 'linear-gradient(to right, #2d393f '+progress+', #364449 '+progress+', #364449 '+progress+')' }">
+    {{ header }}
+    <br>
+    <sub>{{ subHeader }}</sub>
+  </p>
+</div>
