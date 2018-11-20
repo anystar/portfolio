@@ -1,0 +1,92 @@
+.hotel-shamrock {
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(2, 1fr);
+
+    grid-template-areas:
+    'primary primary photo-1 photo-2'
+    'primary primary photo-3 photo-4';
+
+    @media (max-width: 1000px) {
+        grid-template-columns: repeat(4, 1fr); 
+        grid-template-rows: repeat(4, 1fr);
+
+        grid-template-areas:
+        'primary primary primary primary'
+        'primary primary primary primary'
+        'photo-1 photo-1 photo-2 photo-2'
+        'photo-3 photo-3 photo-4 photo-4';
+    }
+
+    .primary { grid-area: primary }
+    .photo-1 { grid-area: photo-1 }
+    .photo-2 { grid-area: photo-2 }
+    .photo-3 { grid-area: photo-4 }
+    .photo-4 { grid-area: photo-3 }
+}
+
+.taylors-paint {
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(2, 1fr);
+
+    grid-template-areas:
+    'wide wide primary primary'
+    'photo-1 photo-2 primary primary';
+
+    @media (max-width: 1000px) {
+        grid-template-columns: repeat(5, 1fr); 
+        grid-template-rows: repeat(3, 1fr);
+
+        grid-template-areas:
+        'photo-2 photo-2 primary primary primary'
+        'wide wide primary primary primary'
+        'photo-1 photo-1 primary primary primary';
+    }
+
+    @media (max-width: 600px) {
+        grid-template-columns: repeat(3, 1fr); 
+        grid-template-rows: repeat(4, 1fr);
+
+        grid-template-areas:
+        'primary primary primary'
+        'primary primary primary'
+        'primary primary primary'
+        'photo-1 photo-2 wide';
+    }
+
+    .primary { grid-area: primary; }
+    .wide { grid-area: wide }
+    .photo-1 { grid-area: photo-1 }
+    .photo-2 { grid-area: photo-2 }
+}
+
+.more-webdesign {
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-template-areas:
+    'item-1 item-2 item-3';
+
+    @media (max-width: 1200px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+
+        grid-template-areas:
+        'item-1 item-1'
+        'item-1 item-1'
+        'item-1 item-1'
+        'item-1 item-1'
+        'item-2 item-3';
+    }
+
+    @media (max-width: 650px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        'item-1'
+        'item-2'
+        'item-3';
+    }
+
+    .item-1 { grid-area: item-1; }
+    .item-2 { grid-area: item-2; }
+    .item-3 { grid-area: item-3; }
+}

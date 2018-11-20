@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SectionHeaderComponent } from './section-header.component';
+import { GameDesignComponent } from './game-design.component';
 
-describe('SectionHeaderComponent', () => {
-  let component: SectionHeaderComponent;
-  let fixture: ComponentFixture<SectionHeaderComponent>;
+describe('GameDesignComponent', () => {
+  let component: GameDesignComponent;
+  let fixture: ComponentFixture<GameDesignComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SectionHeaderComponent ]
+      declarations: [ GameDesignComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SectionHeaderComponent);
+    fixture = TestBed.createComponent(GameDesignComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
