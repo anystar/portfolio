@@ -7,61 +7,48 @@
     <a class="mailer" href="mail:summerwhite@mail.com">summerwhite@mail.com</a><br>
     <a target="_blank" href="https://facebook.com/selfdirected">Facebook</a> - <a target="_blank" href="https://www.flickr.com/people/summerwhite/">Flickr</a>
 
-    <div class="grid summer-white">
-      <div class="photo"><img src="assets/webp/summer-01.webp"></div>
-      <div class="photo" style="background-image: url('assets/webp/summer-03.webp');"></div>
-      <div class="photo" style="background-image: url('assets/webp/summer-02.webp');"></div>
-      <div class="photo cover-photo" style="background-image: url('assets/webp/cover-photo.webp');"></div>
+    <div class="accordion">
+        <ul>
+            <li class="web-design">
+                <div>
+                    <a routerLink="/web-design">
+                        <h2>Web Design</h2>
+                    </a>
+                </div>
+            </li>
+            <li class="photography">
+                <div>
+                    <a routerLink="/photography">
+                        <h2>Photography</h2>
+                    </a>
+                </div>
+            </li>
+            <li class="game-design">
+                <div>
+                    <a routerLink="/game-design">
+                        <h2>Game Design</h2>
+                    </a>
+                </div>
+            </li>
+            <li class="fabrication">
+                <div>
+                    <a routerLink="/fabrication">
+                        <h2>Fabrication</h2>
+                    </a>
+                </div>
+            </li>
+            <li class="about">
+                <div>
+                    <a routerLink="/about">
+                        <h2>About</h2>
+                    </a>
+                </div>
+            </li>
+        </ul>
     </div>
 
-    <p>
-      Currently working at <a href="http://webworksau.com.au/">Web Works</a> in Bendigo Australia as a Lead Web Designer. Building small to medium sized business websites
-      from design to completion and providing on going technical support.
-    </p>
-    <p>
-      I am seeking oppunities to work on projects involving Angular or RESTful/SPA like applications.
-    </p>
   </section>
 
-  <div class="accordion">
-    <ul>
-        <li id="gmail">
-            <div>
-                <a routerLink="/web-design" routerLinkActive="active">
-                    <h2>Web Design</h2>
-                </a>
-            </div>
-        </li>
-        <li id="duolingo">
-            <div>
-                <a routerLink="/photography">
-                    <h2>Photography</h2>
-                </a>
-            </div>
-        </li>
-        <li id="youtube">
-            <div>
-                <a routerLink="/game-design">
-                    <h2>Game Design</h2>
-                </a>
-            </div>
-        </li>
-        <li id="reddit">
-            <div>
-                <a href="#0">
-                    <h2>Fabrication</h2>
-                </a>
-            </div>
-        </li>
-        <li id="utorrent">
-            <div>
-                <a href="#0">
-                    <h2>About</h2>
-                </a>
-            </div>
-        </li>
-    </ul>
-</div>
 
   <router-outlet></router-outlet>
 

@@ -61,7 +61,7 @@ video:hover {
     box-shadow: 0 2px 2px #000;
     width: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     cursor: pointer;
 
     @media (max-width: 1200px) {

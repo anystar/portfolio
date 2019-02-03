@@ -3,8 +3,12 @@
 }
 
 #main-content section > header {
-    margin-bottom: 3rem;
+    margin: 4rem 0 3rem 0;
     text-align: center;
+}
+
+#main-content section > header h1 {
+    line-height: 2.5rem;
 }
 
 #main-content section > header h2 {
@@ -20,6 +24,19 @@
     font-style: italic;
 }
 
+#main-content section > header p {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 1.7rem;
+
+    @media (max-width: 990px) {
+        width: 100%;
+        font-size: 1rem;
+    }
+}
+
 #content-nav {
     border: 1px solid red;
     display: flex;
@@ -32,7 +49,7 @@
 .grid {
     display: grid;
     grid-gap: 1.5rem;
-    margin-bottom: 5rem;
+    margin-bottom: 1.5rem;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -73,7 +90,7 @@
     text-align: center;
 }
 
-.grid > div > .caption > p, .video-controls p  {
+.grid > div > .caption > p  {
     font-family: roboto;
     font-size: 1rem;
     text-transform: uppercase;
@@ -117,23 +134,7 @@ section#intro>a {
     font-weight: lighter;
 }
 
-section#intro>p {
-    font-size: 1.2rem;
-    font-weight: lighter;
-    width: 60%;
-    margin: 2rem auto;
-}
 
-.summer-white {
-    grid-template-columns: repeat(3, 1fr);    
-    grid-template-rows: repeat(2, 1fr);
-    max-width: 700px;
-    margin: 2rem auto;
-}
-
-.summer-white>.cover-photo {
-    grid-column: 1 / 4;
-}
 
 
 .controls {
@@ -207,6 +208,10 @@ section#intro>p {
     height: 140px;
     overflow: visible;
     margin: 3rem auto 3rem auto;
+
+    @media (max-width: 990px) {
+        height: inherit;
+    }
 }
 
 .accordion ul {
@@ -228,6 +233,10 @@ section#intro>p {
     transition: all 500ms ease;
     background-color: transparent;
     background-size: 5vw !important;
+
+    @media (max-width: 990px) {
+        display: table-row;
+    }
 }
 
 .accordion ul li div {
@@ -285,8 +294,8 @@ section#intro>p {
 }
 
 .accordion ul:hover li:hover {
-    width: 60%;
-    background-size: 8vw !important;
+    width: 12%;
+    background-size: 7vw !important;
 }
 
 .accordion ul:hover li:hover a {
@@ -299,40 +308,60 @@ section#intro>p {
     transform: translateX(0);
 }
 
-#email {
-    background: #1d6fb5 url("../assets/icn/outlook.png") center center no-repeat;
+.accordion {
+
+    .web-design {
+        background: #21292E url("../assets/icn/web-design.png") center center no-repeat;
+    }
+
+    .photography {
+        background: #293238 url("../assets/icn/photography.png") center center no-repeat;
+    }
+
+    .game-design {
+        /*background-color: #e94132;*/
+        background: #21292E url("../assets/icn/game-design.png") center center no-repeat;
+    }
+
+    .fabrication {
+        /*background-color: #ff4500;*/
+        background: #293238 url("../assets/icn/fabrication.png") center center no-repeat;
+    }
+
+    .about {
+        background-color: #088a3f;
+        background: #21292E url("../assets/icn/about.png") center center no-repeat;
+    }
 }
 
-#gmail {
-    /*background-color: #e94132;*/
-    background: #ffffff url("../assets/icn/gmail.png") center center no-repeat;
+section > .visit {
+    display: block;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: lighter;
 }
 
-#netflix {
-    background: #000 url("../assets/icn/netflix.png") center center no-repeat;
-}
+// #reddit {
+//     /*background-color: #ff4500;*/
+//     background: #ff4500 url("../assets/icn/reddit.png") center center no-repeat;
+// }
 
-#reddit {
-    /*background-color: #ff4500;*/
-    background: #ff4500 url("../assets/icn/reddit.png") center center no-repeat;
-}
+// #youtube {
+//     background-color: #cd201f;
+//     background: #cd201f url("../assets/icn/youtube.png") center center no-repeat;
+// }
 
-#youtube {
-    background-color: #cd201f;
-    background: #cd201f url("../assets/icn/youtube.png") center center no-repeat;
-}
+// #soundcloud {
+//     background-color: #ff8800;
+//     background: #ff5510 url("../assets/icn/soundcloud.png") center center no-repeat;
+// }
 
-#soundcloud {
-    background-color: #ff8800;
-    background: #ff5510 url("../assets/icn/soundcloud.png") center center no-repeat;
-}
+// #utorrent {
+//     background-color: #088a3f;
+//     background: #088a3f url("../assets/icn/utorrent.png") center center no-repeat;
+// }
 
-#utorrent {
-    background-color: #088a3f;
-    background: #088a3f url("../assets/icn/utorrent.png") center center no-repeat;
-}
-
-#duolingo {
-    background-color: #78c800;
-    background: #78c800 url("../assets/icn/duolingo.png") center center no-repeat;
-}
+// #duolingo {
+//     background-color: #78c800;
+//     background: #78c800 url("../assets/icn/duolingo.png") center center no-repeat;
+// }

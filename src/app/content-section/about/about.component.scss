@@ -1,0 +1,17 @@
+#about > p {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    width: 60%;
+    margin: 2rem auto;
+}
+
+.summer-white {
+    grid-template-columns: repeat(3, 1fr);    
+    grid-template-rows: repeat(2, 1fr);
+    max-width: 900px;
+    margin: 2rem auto;
+}
+
+.summer-white > .cover-photo {
+    grid-column: 1 / 4;
+}

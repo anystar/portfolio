@@ -1,8 +1,5 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 
-
-declare var lightGallery: any;
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -17,13 +14,5 @@ export class AppComponent {
   ngOnInit() {
 
     this.year = (new Date()).getFullYear().toString();
-
-    var galleries = document.getElementsByClassName('lightgallery');
-
-    for (var i = 0; i < galleries.length; i++) {
-      lightGallery(galleries[i], {
-        "selector": ".photo"
-      });
-    }
   }
 }

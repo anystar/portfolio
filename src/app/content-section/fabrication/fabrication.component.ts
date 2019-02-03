@@ -3,11 +3,11 @@ import { Component, OnInit } from '@angular/core';
 declare var lightGallery: any;
 
 @Component({
-  selector: 'photography',
-  templateUrl: './photography.component.html',
-  styleUrls: ['./photography.component.scss']
+  selector: 'fabrication',
+  templateUrl: './fabrication.component.html',
+  styleUrls: ['./fabrication.component.scss']
 })
-export class PhotographyComponent implements OnInit {
+export class FabricationComponent implements OnInit {
 
   constructor() { }
 
